@@ -1,9 +1,38 @@
 ---
+const pageTitle = "About Me"
+const identity = {
+    firstName: 'Sarah',
+    country: 'Canada',
+    occupation: "Technical Writer",
+    hobbies: ["photography", 'birdwatching', 'baseball']
+};
 
+const skills = [ 'html', 'css', 'Javascript', 'react']
+
+const happy = true;
+const finished = false;
+const goal = 3;
 ---
-<a href="/">Home</a>
-<a href='/about/'>About</a>
-<a href='/blog'>Blog</a>
-<div class='about page'>
-    <p>THis from about page</p>
-</div>
+
+<p>Here are a few facts about me:</p>
+<ul>
+    <li> My name is {identity.firstName} </li>
+    <li>I live in {identity.country} and i work as a {identity.occupation} .</li>
+    {identity.hobbies.length >= 2 && <li> Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>}
+</ul>
+<p>My skills are:</p>
+<ul>
+    {skills.map((skill) => <li>{skill}</li>)}
+</ul>
+
+
+{ happy && <p> I am happy to render this paragraph with conditionals</p>}
+
+{finished && <p> I finished this tutorial</p>}
+
+{
+ goal === 3 ? 
+  <p>My goal is to finish in 3 days</p> 
+ : 
+  <p>My goal is to finish in 1 day</p>
+}
