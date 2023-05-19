@@ -1,20 +1,38 @@
 ---
-
+import '../styles/global.css';
 ---
-
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Retrograde Astro</title>
-	</head>
-	<body>
-		<h1>Retrograde Astro</h1>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Retrograde Astro</title>
+    <style>
+    .card {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      margin-bottom: 2px;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Retrograde Astro</h1>
     <h2>Retrograde Astro</h2>
     <h3>Retrograde Astro</h3>
     <p>Retrograde Astro</p>
+    <a href="/">Home</a>
+    <a href='/about'>About</a>
+    <a href='/blog'>Blog</a>
     <span>Retrograde Astro</span>
-    </body>
-  </html>
+   <div class='card'> 1 </div>
+   <div class='card'> 2 </div>
+   <div class='card'> 3 </div>
+   <div class='card'> 4 </div>
+   <div class='card'> 5 </div>
+   <div class='card'> 6 </div>
+   <div class='card'> 7 </div>
+   <div class='card'> 8 </div>
+  </body>
+</html>
